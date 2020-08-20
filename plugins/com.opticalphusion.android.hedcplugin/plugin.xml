@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="com.opticalphusion.android.hedcplugin"
+    version="1.0.0">
+    <name>HedcPlugin</name>
+    <description>Hedc Plugin</description>
+    <license>Apache 2.0</license>
+    <keywords>cordova,hedc</keywords>
+    <repo></repo>
+    <issue></issue>
+
+    <js-module src="www/HedcPlugin.js" name="HedcPlugin">
+        <clobbers target="HedcPlugin" />
+    </js-module>
+
+    <!-- android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="HedcPlugin" >
+                <param name="android-package" value="HedcPlugin"/>
+            </feature>
+        </config-file>
+        <source-file src="src/android/HedcPlugin.java" target-dir="src/" />
+        <framework src="src/android/hedc.gradle" custom="true" type="gradleReference" />
+        <lib-file src="libs/hedc-release-1.0.0.aar" />
+    	<resource-file src="libs/hedc-release-1.0.0.aar" target="libs/" />
+    </platform>
+
+</plugin>

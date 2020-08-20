@@ -1,0 +1,17 @@
+{
+    "name": "com.opticalphusion.android.hedcplugin",
+    "version": "0.0.1",
+    "description": "Hedc Plugin",
+    "cordova": {
+        "id": "com.opticalphusion.android.hedcplugin",
+        "platforms": [
+        "android"
+        ]
+    },
+    "keywords": [
+        "ecosystem:cordova",
+        "cordova-android"
+    ],
+    "author": "",
+    "license": "Apache 2.0"
+}
